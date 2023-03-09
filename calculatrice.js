@@ -18,7 +18,7 @@ class Calculatrice {
         return a / b;
       }
   }
-  const maCalculatrice = new Calculatrice();
+ // const maCalculatrice = new Calculatrice();
 
 //   console.log(maCalculatrice.addition(5, 7)); // Output: 12
 //   console.log(maCalculatrice.soustraction(10, 5)); // Output: 5

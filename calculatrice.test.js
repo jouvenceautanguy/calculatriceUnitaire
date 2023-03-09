@@ -1,5 +1,5 @@
 //const { describe } = require('yarg');
-const { it } = require('node:test');
+//const { it } = require('node:test');
 const Calculatrice = require('./calculatrice');
 
 describe('Calculatrice', () => {
@@ -11,13 +11,18 @@ describe('Calculatrice', () => {
         const maCalculatrice = new Calculatrice();
         expect(maCalculatrice.multiplication(5, 2)).toBe(10);
       });
+      it('soustrait 2 nombres', () => {
+        const maCalculatrice = new Calculatrice();
+        expect(maCalculatrice.soustraction(15,5)).toBe(10);
+    }, 3000);
     
-      // Test pour la fonction division
-    it('division de deux nombres', () => {
-        const maCal = new Calculatrice();
-        expect(maCal.division(10,2)).toBe(5);
-    })
     
+      // Test pour la fonction division avec timeout
+
+    it('divise deux nombres', () => {
+        const maCalculatrice = new Calculatrice();
+        expect(maCalculatrice.division(10, 5)).toBe(2);
+      }, 2000);
       // Test pour la division par zéro
       it('lève une exception en cas de division par zéro', () => {
         const maCalculatrice = new Calculatrice();
@@ -25,3 +30,4 @@ describe('Calculatrice', () => {
       });
   });
   
+
